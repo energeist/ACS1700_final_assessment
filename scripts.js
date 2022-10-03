@@ -14,19 +14,19 @@ const canvas = document.getElementById('canvas');
 canvas.style.width = '50px'
 canvas.style.minHeight = '50px'
 canvas.style.backgroundColor = colorInput.value;
-update(e)
-drawBox()
-
-function update(e) {
-    widthDisplay.innerHTML =  (`${widthInput.value}px`)
-    heightDisplay.innerHTML =  (`${heightInput.value}px`)
-    colorDisplay.innerHTML =  (`${colorInput.value}`)
-    drawBox()
-    console.log(`${widthInput} ${widthInput.value}`)
-}
 
 function drawBox() {
     canvas.style.backgroundColor = colorInput.value;
     canvas.style.width = widthInput.value+'px';
     canvas.style.minHeight = heightInput.value+'px';
-  }
+}
+
+function update() {
+    widthDisplay.innerHTML =  (`${widthInput.value}px`)
+    heightDisplay.innerHTML =  (`${heightInput.value}px`)
+    colorDisplay.innerHTML =  (`${colorInput.value}`)
+    drawBox()
+}
+
+update()
+

@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mark Rattle - ACS 1700 Final Assessment</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
     <meta name="description" content="Mark Rattle's Final Assessment for ACS1700">
     <meta name="author" content="Mark Rattle">
     <meta name="keywords" content="ACS1700, Assessment">
 </head>
 <body>
-    <div class="dashboard">
-        <section class="name grid-cell">
+    <main class="dashboard">
+        <section class="name grid-cell" id="name-card">
             <h1>Mark Rattle</h1>
             <p>FEW Assessment</p>
         </section>
-        <section class="paramsin grid-cell">
+        <section class="paramsin grid-cell" id="input-card">
             <label for="width">Width:</label>
             <input id="width" type="number" placeholder="pixels" value="50">
             <label for="height">Height:</label>
@@ -24,7 +23,7 @@
             <label for="color">Color:</label>
             <input id="color" type="color" value="#000000">
         </section>
-        <section class="paramsout grid-cell">
+        <section class="paramsout grid-cell" id="output-card">
             <h2>Width</h2>
             <p id="widthDisplay"></p>
             <h2>Height</h2>
@@ -32,11 +31,11 @@
             <h2>Color</h2>
             <p id="colorDisplay"></p>
         </section>
-        <section class="colorblock grid-cell">
-            <h2 class = "colorheader">Color</h2>
+        <section class="colorblock grid-cell" id="color-card">
+            <h2 class="colorheader">Color</h2>
             <div class="canvas" id="canvas"></div>
         </section>
-    </div>
+    </main>
   <script src="./scripts.js" type="module"></script>  
 </body>
 </html>
